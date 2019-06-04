@@ -14,14 +14,9 @@ contract('Flight Surety Tests', async (accounts) => {
     let contractowner = accounts[0]
     let bobAirline = accounts[1]
     let aliceAirline = accounts[2]
-    console.log("Adding bobAirline to registration");
-    await config.flightSuretyApp.addAddressToRegistationQue({from:bobAirline});
-    result = await config.flightSuretyApp.isInQue.call(bobAirline,{from:bobAirline});
-    assert.equal(result,true,"BOB is not in registrationQue")
-    console.log("Adding aliceAirline to registration");
-    //await config.flightSuretyApp.addAddressToRegistationQue({from:aliceAirline});
-    //result = await config.flightSuretyApp.isInQue.call(aliceAirline,{from:aliceAirline});
-    //assert.equal(result,true,"Alice is not in registrationQue");
+
+    let result = await config.flightSuretyApp.isRegisterAirline.call(accounts[10],{from:accounts[9]});
+    console.log(result);
 
     console.log("Promote bobAirline from contractowner")
     await config.flightSuretyApp.promoteAddressFromRegistration(bobAirline, {from:contractowner});
@@ -39,7 +34,7 @@ contract('Flight Surety Tests', async (accounts) => {
     await config.flightSuretyApp.promoteAddressFromRegistration(aliceAirline, {from:bobAirline});
 
     result = await config.flightSuretyApp.isRegisterAirline.call(aliceAirline,{from:aliceAirline});
-    console.log(result)
+    //console.log(result)
 
 
 

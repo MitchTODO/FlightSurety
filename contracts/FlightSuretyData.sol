@@ -14,9 +14,9 @@ contract FlightSuretyData {
     uint256 private registeredCount = 0;
 
     struct airliner {
-      bool registered = false;
-      bool hasPaid = false;
-      uint256 votes = 0;
+      bool registered;
+      bool hasPaid;
+      uint256 votes;
     }
 
     mapping(address => airliner) private registerQue;
@@ -26,7 +26,7 @@ contract FlightSuretyData {
     {
 
         contractOwner = msg.sender;
-        isInRegisterQue[msg.sender] = true;
+        //isInRegisterQue[msg.sender] = true;
         airliner NewAirline;
         NewAirline.registered = true;
         NewAirline.hasPaid = true;
@@ -37,11 +37,11 @@ contract FlightSuretyData {
 
 
 
-  function isInQue(address addressToCheck) external returns(bool)
-  {
-    bool addressFetched = isInRegisterQue[addressToCheck];
-    return (addressFetched);
-  }
+  //function isInQue(address addressToCheck) external returns(bool)
+  //{
+  //  bool addressFetched = isInRegisterQue[addressToCheck];
+  //  return (addressFetched);
+  //}
 
   function getRegistrationCount() external returns(uint256)
     {

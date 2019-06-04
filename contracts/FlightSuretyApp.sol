@@ -46,12 +46,12 @@ contract FlightSuretyApp {
         _;
       }
 
-    modifier isAlreadyRegistered(address addressToCheck)
-      {
+    //modifier isAlreadyRegistered(address addressToCheck)
+    //  {
         // add mapping to verify addrress
-        require(flightSuretyData.isInQue(addressToCheck) == false, "Address is already in registration que");
-        _;
-      }
+    //    require(flightSuretyData.isInQue(addressToCheck) == false, "Address is already in registration que");
+    //    _;
+    //  }
 
       // Define a modifier that checks if the paid amount is sufficient to cover the price
       modifier paidEnough(uint _price)
@@ -86,10 +86,10 @@ contract FlightSuretyApp {
         return flightSuretyData.isRegisterAirline(addressToCheck);
      }
 
-     function isInQue(address addressToCheck) external returns(bool)
-     {
-       return flightSuretyData.isInQue(addressToCheck);
-     }
+     //function isInQue(address addressToCheck) external returns(bool)
+     //{
+    //   return flightSuretyData.isInQue(addressToCheck);
+     //}
 
 /*********Functions**************/
 
@@ -123,7 +123,7 @@ contract FlightSuretyApp {
 
 contract FlightSuretyData {
 
-  function isInQue(address addressToCheck) external returns(bool);
+  //function isInQue(address addressToCheck) external returns(bool);
   function getRegistrationCount() external returns(uint256);
   function isRegisterAirline(address addressToCheck) external returns(bool registered,bool hasPaid, uint256 votes);
   function changeRegisteration(address addressToRegister, bool registrationState);
