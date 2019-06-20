@@ -1,6 +1,7 @@
 # FlightSurety
 
-FlightSurety is a blockchain smart contract that allows for the covrage of airline flight insurance. Including a browser UI allowing for contact interaction.
+FlightSurety is a blockchain smart contract that allows for purchasing insurance on airline flights. Including a browser UI allowing for contact interaction.
+
 
 ## Install
 
