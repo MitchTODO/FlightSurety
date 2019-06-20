@@ -45,10 +45,6 @@ To run truffle tests:
 
 `truffle test ./test/flightSurety.js`
 
-
-Note: To test oracle functionality, server must be up and running.
-
-`npm run server`
 `truffle test ./test/oracles.js`
 
 ## Start the server
