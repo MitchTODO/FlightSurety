@@ -48,7 +48,7 @@ Register oracles and airlines, also creates and registeres flights:
 
 ## Start webserver
 
-Servers client app:
+Dapp server:
 
 `npm run dapp`
 
