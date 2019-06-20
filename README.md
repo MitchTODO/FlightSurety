@@ -39,12 +39,13 @@ To run truffle tests:
 `truffle test ./test/flightSurety.js`
 
 Note: To test oracle functionality, server must be up and running.
+
 `npm run server`
 `truffle test ./test/oracles.js`
 
 ## Start the server
 
-Register oracles and airlines, also creates and registeres flights:
+Register oracles, airlines and flights:
 
 `npm run server`
 
@@ -62,6 +63,8 @@ To view dapp:
 ## Dapp Images
 
 Hopefully the UI is self explanatory.
+
+Note: status updates are automatically requested 5 seconds before the flight departes.
 
 ![alt text](./pics/img1.png "UI")
 
