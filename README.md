@@ -40,8 +40,11 @@ Test files
 To run truffle tests:
 
 `truffle test ./test/Insurance.js`
+
 `truffle test ./test/airlines.js`
+
 `truffle test ./test/flightSurety.js`
+
 
 Note: To test oracle functionality, server must be up and running.
 
