@@ -11,6 +11,10 @@ To install, download or clone the repo, then:
 
 `npm install`
 
+Make sure you already have truffle installed:
+
+`npm install -g truffle`
+
 
 `truffle compile`
 
