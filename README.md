@@ -68,7 +68,7 @@ To view dapp:
 
 Hopefully the UI is self explanatory.
 
-Note: status updates are automatically requested 5 seconds before the flight departes.
+Note: status updates are automatically requested 5 seconds before the flight departs.
 
 ![alt text](./pics/img1.png "UI")
 
